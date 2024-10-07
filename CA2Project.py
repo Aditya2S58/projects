@@ -40,10 +40,10 @@ def get_password_with_asterisks(prompt='Password: '):
     password = ''
     while True:
         char = msvcrt.getch()
-        if char == b'\r':  # Enter key
+        if char == b'\r':  
             print('')
             break
-        elif char == b'\x08':  # Backspace key
+        elif char == b'\x08':  
             if len(password) > 0:
                 password = password[:-1]
                 print('\b \b', end='', flush=True)
